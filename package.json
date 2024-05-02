@@ -1,5 +1,6 @@
 {
-  "name": "lab-react-components",
+  "homepage": "https://deepakshi725.github.io/project63/",
+  "name": "project63",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +14,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base ./",
+    "deploy": "gh-pages -d build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -37,6 +39,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.4",
+    "gh-pages": "^6.1.1",
     "vite": "^4.4.9"
   }
 }
